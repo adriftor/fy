@@ -56,6 +56,8 @@ public class Record implements Map,Serializable {
 	 */
 	public static Record beanToRd(Object bean) {
 		return beanToRd(bean,  null, null,false);
+
+
 	}
 
 	/**
