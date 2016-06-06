@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.xh.system.dao.RightDao">
+	
+<select parameterType="Record" resultType="Record" id="list"  >
+			select * from sys_right
+	</select>
+	
+<update parameterType="Record" id="updateName">
+	update sys_right set right_name=#{right_name} where right_id=#{right_id};
+</update>
+
+
+</mapper>
